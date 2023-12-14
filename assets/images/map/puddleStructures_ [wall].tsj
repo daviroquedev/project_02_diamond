@@ -1,0 +1,14 @@
+{ "columns":15,
+ "image":"puddleStructures_ [wall].png",
+ "imageheight":128,
+ "imagewidth":240,
+ "margin":0,
+ "name":"puddleStructures_ [wall]",
+ "spacing":0,
+ "tilecount":120,
+ "tiledversion":"1.10.2",
+ "tileheight":16,
+ "tilewidth":16,
+ "type":"tileset",
+ "version":"1.10"
+}

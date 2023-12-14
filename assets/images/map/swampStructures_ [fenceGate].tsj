@@ -1,0 +1,14 @@
+{ "columns":10,
+ "image":"swampStructures_ [fenceGate].png",
+ "imageheight":112,
+ "imagewidth":160,
+ "margin":0,
+ "name":"swampStructures_ [fenceGate]",
+ "spacing":0,
+ "tilecount":70,
+ "tiledversion":"1.10.2",
+ "tileheight":16,
+ "tilewidth":16,
+ "type":"tileset",
+ "version":"1.10"
+}

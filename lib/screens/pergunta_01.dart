@@ -15,15 +15,11 @@ class _Pergunta01State extends State<Pergunta01> {
   void _verificarPar() {
     if (_formKey.currentState!.validate()) {
       int? number = int.tryParse(_numberController.text);
-      if (number != null && number % 2 == 0) {
-        setState(() {
-          _result = 'O número é PAR!';
-        });
-      } else {
-        setState(() {
-          _result = 'O número não é PAR!';
-        });
-      }
+      setState(() {
+        _result = (number != null && number % 2 == 0)
+            ? 'O número é PAR!'
+            : 'O número não é PAR!';
+      });
     }
   }
 
@@ -31,7 +27,7 @@ class _Pergunta01State extends State<Pergunta01> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Pergunta 1'),
+        title: const Text('Par ou Impar'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

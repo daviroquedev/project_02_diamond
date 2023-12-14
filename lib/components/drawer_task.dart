@@ -10,9 +10,13 @@ class TabBarDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color.fromARGB(255, 110, 67, 183),
         title: const Row(
           children: [
-            Text('DIAMOND SOLUTIONS'),
+            Text(
+              'DIAMOND SOLUTIONS',
+              style: TextStyle(color: Color.fromARGB(255, 173, 245, 239)),
+            ),
             Padding(
               padding: EdgeInsets.all(8.0),
               child: Icon(
@@ -76,7 +80,24 @@ class TabBarDemo extends StatelessWidget {
                 Navigator.pushReplacementNamed(context, '/pergunta05');
               },
             ),
-            // Adicione mais itens do drawer conforme necessário
+            ListTile(
+              title: const Text('Pergunta 06'),
+              onTap: () {
+                Navigator.pushReplacementNamed(context, '/pergunta06');
+              },
+            ),
+            ListTile(
+              title: const Text('Pergunta 07'),
+              onTap: () {
+                Navigator.pushReplacementNamed(context, '/pergunta07');
+              },
+            ),
+            ListTile(
+              title: const Text('Pergunta 08'),
+              onTap: () {
+                Navigator.pushReplacementNamed(context, '/pergunta08');
+              },
+            ),
           ],
         ),
       ),

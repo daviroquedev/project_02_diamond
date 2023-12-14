@@ -14,21 +14,24 @@ class _MyWidgetState extends State<Pergunta02> {
   String _resultado = '';
 
   void _verificarMaior() {
-    if (_formKey.currentState!.validate()) {
-      int numero1 = int.parse(_numero1Controller.text);
-      int numero2 = int.parse(_numero2Controller.text);
-
-      if (numero1 == numero2) {
-        setState(() {
-          _resultado = 'Os números são iguais! ${_numero1Controller.text}';
-        });
-      } else {
-        int maior = numero1 > numero2 ? numero1 : numero2;
-        setState(() {
-          _resultado = 'O maior número é: $maior  ${_numero1Controller.text}';
-        });
-      }
+    if (!_formKey.currentState!.validate()) {
+      return;
     }
+
+    int numero1 = int.parse(_numero1Controller.text);
+    int numero2 = int.parse(_numero2Controller.text);
+
+    if (numero1 == numero2) {
+      setState(() {
+        _resultado = 'Os números são iguais!';
+      });
+      return;
+    }
+
+    int maior = numero1 > numero2 ? numero1 : numero2;
+    setState(() {
+      _resultado = 'O maior número é: $maior';
+    });
   }
 
   @override
