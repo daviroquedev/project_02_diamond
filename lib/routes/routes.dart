@@ -16,18 +16,18 @@ import 'package:project_02_diamond/screens/pergunta_12.dart';
 
 Map<String, WidgetBuilder> getAppRoutes() {
   return {
-    '/': (context) => const TabBarDemo(child: TestMap()),
-    '/pergunta01': (context) => const TabBarDemo(child: Pergunta01()),
-    '/pergunta02': (context) => const TabBarDemo(child: Pergunta02()),
-    '/pergunta03': (context) => const TabBarDemo(child: Pergunta03()),
-    '/pergunta04': (context) => const TabBarDemo(child: Pergunta04()),
-    '/pergunta05': (context) => const TabBarDemo(child: Pergunta05()),
-    '/pergunta06': (context) => const TabBarDemo(child: Pergunta06()),
-    '/pergunta07': (context) => const TabBarDemo(child: Pergunta07()),
-    '/pergunta08': (context) => const TabBarDemo(child: Pergunta08()),
-    '/pergunta09': (context) => const TabBarDemo(child: Pergunta09()),
-    '/pergunta10': (context) => const TabBarDemo(child: Pergunta10()),
-    '/pergunta11': (context) => const TabBarDemo(child: Pergunta11()),
-    '/pergunta12': (context) => const TabBarDemo(child: Pergunta12()),
+    '/': (context) => const DrawerPaginate(child: TestMap()),
+    '/pergunta01': (context) => const DrawerPaginate(child: Pergunta01()),
+    '/pergunta02': (context) => const DrawerPaginate(child: Pergunta02()),
+    '/pergunta03': (context) => const DrawerPaginate(child: Pergunta03()),
+    '/pergunta04': (context) => const DrawerPaginate(child: Pergunta04()),
+    '/pergunta05': (context) => const DrawerPaginate(child: Pergunta05()),
+    '/pergunta06': (context) => const DrawerPaginate(child: Pergunta06()),
+    '/pergunta07': (context) => const DrawerPaginate(child: Pergunta07()),
+    '/pergunta08': (context) => const DrawerPaginate(child: Pergunta08()),
+    '/pergunta09': (context) => const DrawerPaginate(child: Pergunta09()),
+    '/pergunta10': (context) => const DrawerPaginate(child: Pergunta10()),
+    '/pergunta11': (context) => const DrawerPaginate(child: Pergunta11()),
+    '/pergunta12': (context) => const DrawerPaginate(child: Pergunta12()),
   };
 }

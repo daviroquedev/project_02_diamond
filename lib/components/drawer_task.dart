@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:project_02_diamond/screens/home_screen.dart';
 
-class TabBarDemo extends StatelessWidget {
+class DrawerPaginate extends StatelessWidget {
   final Widget child;
 
-  const TabBarDemo({Key? key, required this.child}) : super(key: key);
+  const DrawerPaginate({Key? key, required this.child}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
