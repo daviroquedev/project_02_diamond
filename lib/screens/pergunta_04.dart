@@ -7,7 +7,7 @@ class Pergunta04 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Reajuste Salarial'),
+        title: const Text('Reajuste Salarial - 4'),
       ),
       body: const ReajusteSalarialScreen(),
     );

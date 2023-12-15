@@ -9,6 +9,10 @@ import 'package:project_02_diamond/screens/pergunta_05.dart';
 import 'package:project_02_diamond/screens/pergunta_06.dart';
 import 'package:project_02_diamond/screens/pergunta_07.dart';
 import 'package:project_02_diamond/screens/pergunta_08.dart';
+import 'package:project_02_diamond/screens/pergunta_09.dart';
+import 'package:project_02_diamond/screens/pergunta_10.dart';
+import 'package:project_02_diamond/screens/pergunta_11.dart';
+import 'package:project_02_diamond/screens/pergunta_12.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,6 +39,10 @@ class MyApp extends StatelessWidget {
         '/pergunta06': (context) => const TabBarDemo(child: Pergunta06()),
         '/pergunta07': (context) => const TabBarDemo(child: Pergunta07()),
         '/pergunta08': (context) => const TabBarDemo(child: Pergunta08()),
+        '/pergunta09': (context) => const TabBarDemo(child: Pergunta09()),
+        '/pergunta10': (context) => const TabBarDemo(child: Pergunta10()),
+        '/pergunta11': (context) => const TabBarDemo(child: Pergunta11()),
+        '/pergunta12': (context) => const TabBarDemo(child: Pergunta12()),
       },
     );
   }

@@ -38,7 +38,7 @@ class _MyWidgetState extends State<Pergunta02> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Verificar Maior Número'),
+        title: const Text('Verificar Maior Número - 2'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

@@ -40,7 +40,7 @@ class _MyWidgetState extends State<Pergunta03> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Apto a votar?'),
+        title: const Text('Apto a votar? - 3'),
       ),
       body: Center(
         child: Padding(
@@ -89,7 +89,7 @@ class _MyWidgetState extends State<Pergunta03> {
                     });
                   },
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 ElevatedButton(
                   onPressed: verificarVotacao,
                   child: const Text('Verificar Elegibilidade'),

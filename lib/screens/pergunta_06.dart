@@ -12,6 +12,7 @@ class _Pergunta06State extends State<Pergunta06> {
   final TextEditingController _numeroController = TextEditingController();
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   final Set<int> _numerosMarcados = {};
+
   List<int> _numeros = [];
 
   String? _validarNumero(String? value) {
@@ -34,10 +35,9 @@ class _Pergunta06State extends State<Pergunta06> {
     if (_formKey.currentState!.validate()) {
       int? numero = int.tryParse(_numeroController.text);
       if (numero == null || numero <= 0) {
-        setState(() {
+        return setState(() {
           _numeros = [];
         });
-        return;
       }
 
       return setState(() {
@@ -49,11 +49,12 @@ class _Pergunta06State extends State<Pergunta06> {
   void _marcarNumeros(int quantidade) {
     final random = Random();
     final totalNumbers = Set.from(_numeros);
+    int? numero = int.tryParse(_numeroController.text);
 
     setState(() {
       _numerosMarcados.clear();
 
-      if (_numeros.isEmpty) {
+      if (_numeros.isEmpty || numero! <= 5) {
         return;
       }
 
@@ -69,7 +70,7 @@ class _Pergunta06State extends State<Pergunta06> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Mostrar Números'),
+        title: const Text('Mostrar Números - 6'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -97,7 +98,7 @@ class _Pergunta06State extends State<Pergunta06> {
                 child: Center(
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 248, 218, 239),
+                      color: const Color.fromARGB(255, 248, 218, 239),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Row(
@@ -109,7 +110,8 @@ class _Pergunta06State extends State<Pergunta06> {
                             _marcarNumeros(5);
                           },
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: Color.fromARGB(255, 205, 116, 246),
+                            backgroundColor:
+                                const Color.fromARGB(255, 205, 116, 246),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(8),
                             ),
@@ -124,7 +126,8 @@ class _Pergunta06State extends State<Pergunta06> {
                             _marcarNumeros(10);
                           },
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: Color.fromARGB(255, 205, 116, 246),
+                            backgroundColor:
+                                const Color.fromARGB(255, 205, 116, 246),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(8),
                             ),
@@ -139,7 +142,8 @@ class _Pergunta06State extends State<Pergunta06> {
                             _marcarNumeros(15);
                           },
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: Color.fromARGB(255, 205, 116, 246),
+                            backgroundColor:
+                                const Color.fromARGB(255, 205, 116, 246),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(8),
                             ),

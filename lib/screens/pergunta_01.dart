@@ -27,7 +27,7 @@ class _Pergunta01State extends State<Pergunta01> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Par ou Impar'),
+        title: const Text('Par ou Impar - 1'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

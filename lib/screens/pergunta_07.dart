@@ -36,7 +36,7 @@ class _Pergunta07State extends State<Pergunta07> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Calculando'),
+        title: const Text('Calculando - 7'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

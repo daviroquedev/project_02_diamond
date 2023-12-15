@@ -51,51 +51,75 @@ class TabBarDemo extends StatelessWidget {
               },
             ),
             ListTile(
-              title: const Text('Pergunta 01'),
+              title: const Text('1 - Par ou Impar'),
               onTap: () {
                 Navigator.pushReplacementNamed(context, '/pergunta01');
               },
             ),
             ListTile(
-              title: const Text('Pergunta 02'),
+              title: const Text('2 - Verificar Maior'),
               onTap: () {
                 Navigator.pushReplacementNamed(context, '/pergunta02');
               },
             ),
             ListTile(
-              title: const Text('Pergunta 03'),
+              title: const Text('3 - Apto a votar'),
               onTap: () {
                 Navigator.pushReplacementNamed(context, '/pergunta03');
               },
             ),
             ListTile(
-              title: const Text('Pergunta 04'),
+              title: const Text('4 - Reajuste Salarial'),
               onTap: () {
                 Navigator.pushReplacementNamed(context, '/pergunta04');
               },
             ),
             ListTile(
-              title: const Text('Pergunta 05'),
+              title: const Text('5 - Dia da Semana'),
               onTap: () {
                 Navigator.pushReplacementNamed(context, '/pergunta05');
               },
             ),
             ListTile(
-              title: const Text('Pergunta 06'),
+              title: const Text('6 - Mostrar Nº + Loteria'),
               onTap: () {
                 Navigator.pushReplacementNamed(context, '/pergunta06');
               },
             ),
             ListTile(
-              title: const Text('Pergunta 07'),
+              title: const Text('7 - Calcular numeros'),
               onTap: () {
                 Navigator.pushReplacementNamed(context, '/pergunta07');
               },
             ),
             ListTile(
-              title: const Text('Pergunta 08'),
+              title: const Text('8 - Apenas impares'),
               onTap: () {
                 Navigator.pushReplacementNamed(context, '/pergunta08');
+              },
+            ),
+            ListTile(
+              title: const Text('9 - Menores que 30 '),
+              onTap: () {
+                Navigator.pushReplacementNamed(context, '/pergunta09');
+              },
+            ),
+            ListTile(
+              title: const Text('10 - Maiores que 50'),
+              onTap: () {
+                Navigator.pushReplacementNamed(context, '/pergunta10');
+              },
+            ),
+            ListTile(
+              title: const Text('11 - Texto invertido'),
+              onTap: () {
+                Navigator.pushReplacementNamed(context, '/pergunta11');
+              },
+            ),
+            ListTile(
+              title: const Text('12 - Primeira e ultima Maiúscula'),
+              onTap: () {
+                Navigator.pushReplacementNamed(context, '/pergunta12');
               },
             ),
           ],

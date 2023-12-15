@@ -12,7 +12,7 @@ class _Pergunta05State extends State<Pergunta05> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Dia da Semana'),
+        title: const Text('Dia da Semana - 5'),
       ),
       body: const DiaDaSemanaScreen(),
     );
@@ -72,7 +72,7 @@ class _DiaDaSemanaScreenState extends State<DiaDaSemanaScreen> {
         key: _formKey,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
+          children: [
             TextFormField(
               validator: (value) {
                 if (value == null || value.isEmpty) {
