@@ -15,7 +15,6 @@ class _Pergunta07State extends State<Pergunta07> {
     int soma = 0;
     String sequence = '';
 
-    // Iniciando do número fornecido - 1 até 1 (exclusivo)
     for (int i = numero - 1; i >= 1; i--) {
       soma += i;
       sequence += '$i';
@@ -26,7 +25,6 @@ class _Pergunta07State extends State<Pergunta07> {
       }
     }
 
-    // Adicionando o resultado da soma
     sequence += ' = $soma';
 
     return sequence;

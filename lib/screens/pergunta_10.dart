@@ -25,7 +25,7 @@ class _Pergunta10State extends State<Pergunta10> {
         return AlertDialog(
           title: const Text('Numeros maiores que 50:'),
           content: Text('Quantidade de valores: $maioresQue50'),
-          actions: <Widget>[
+          actions: [
             TextButton(
               onPressed: () {
                 Navigator.of(context).pop();

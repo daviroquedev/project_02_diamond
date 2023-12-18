@@ -32,7 +32,7 @@ class _Pergunta08State extends State<Pergunta08> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
+          children: [
             TextFormField(
               controller: _numeroController,
               keyboardType: TextInputType.number,

@@ -42,7 +42,7 @@ class _ReajusteSalarialScreenState extends State<ReajusteSalarialScreen> {
       padding: const EdgeInsets.all(16.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: <Widget>[
+        children: [
           TextField(
             controller: salarioController,
             keyboardType: const TextInputType.numberWithOptions(decimal: true),

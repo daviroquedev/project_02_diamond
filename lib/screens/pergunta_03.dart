@@ -13,6 +13,7 @@ class _MyWidgetState extends State<Pergunta03> {
   final maskFormatter = MaskTextInputFormatter(
       mask: '##/##/####', filter: {"#": RegExp(r'[0-9]')});
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+
   String? anoNascimento;
   int anoAtual = DateTime.now().year;
   bool podeVotar = false;
